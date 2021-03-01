@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITLP Center</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="Hussein-CSS3.css">
+
+</head>
+<style>
+</style>
+<body>
+    <nav class="navbar">
+        <div class="title-logo"><b>ITLP</b></div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact-us">Contact-Us</a></li>
+            <li><a href="login.php">Login</a></li>
+            <li><a href="register/register.php">Register</a></li>
+
+          </ul>
+        </div>
+      </nav>
+      <div class="hero" id="home">
+        <div class="hero__container">
+          <h1 class="hero__heading">Reserve Your <span >Place</span></h1>
+          
+          <div class="wrapper">
+      <div class="display">
+        <div id="time">
+</div>
+</div>
+<span></span>
+      <span></span>
+    </div>
+<script>
+      setInterval(()=>{
+        const time = document.querySelector(".display #time");
+        let date = new Date();
+        let hours = date.getHours();
+        let minutes = date.getMinutes();
+        let seconds = date.getSeconds();
+        let day_night = "AM";
+        if(hours > 12){
+          day_night = "PM";
+          hours = hours - 12;
+        }
+        if(seconds < 10){
+          seconds = "0" + seconds;
+        }
+        if(minutes < 10){
+          minutes = "0" + minutes;
+        }
+        if(hours < 10){
+          hours = "0" + hours;
+        }
+        time.textContent = hours + ":" + minutes + ":" + seconds + " "+ day_night;
+      });
+    </script>
+          <h2 class="hero__description" ID="home">Information Technology Learning Print</h2>
+          <h2 class="hero__heading2" id="about">It's a local Center,That have many services</h2>
+          <p class="hero__description2" id="about">  we are offering public computers and educational courses that can reserved by appointment.
+             This reservation system provides access to key technical resources while adhering to social distancing 
+             guidelines that protect Center guests and our staff.</p>
+        </div>
+      </div>
+    <!-- Services Section -->
+    <div class="services" id="services">
+      <h1>Our Services</h1>
+      <div class="services__wrapper">
+        <div class="services__card">
+          <h2>Computer Reservation</h2>
+          <p> <img src="images/computer.png" alt="" width="60%"></p>
+          <div class="services__btn"><a href="login.php"><button > Reserve Now</button></a></div>
+        </div>
+        <div class="services__card">
+          <h2>Course Reservation</h2>
+          <p><img src="images/course.png" alt="" width="70%"></p>
+          <div class="services__btn"><button>Reserve Now</button></div>
+        </div>
+        <div class="services__card">
+          <h2>Printing</h2>
+          <p><img src="images/printer.ico" alt="" width="60%"></p>
+          <div class="services__btn"><button>Get Started</button></div>
+        </div>
+        <div class="services__card">
+          <h2>IT Support</h2>
+          <p> <img src="images/support.png" alt="" width="62%"></p>
+          <div class="services__btn"><button>Get Started</button></div>
+        </div>
+      </div>
+    </div>
+    <div class="login-page">
+        <div class="form">
+            <form class="login-form"  method="post">
+            <input type="text" placeholder="Name" name="name">
+            <input type="text" placeholder="LastName" name="lastname" required>
+              <input type="text" placeholder="username" name="Username" required>
+              <input type="password" placeholder="password" name="password1" required>
+              <input type="password" placeholder="Re enter password" name="password2" required>
+              <input type="email" placeholder="Email" name="email" required>
+              <input type="number" placeholder="Phone Number" name="phNum" required>
+              <button name="submit" type="submit">SignUp</button>
+            </form>
+          </div>
+      </div>
+    
+
+    <!-- Footer Section -->
+    <div class="footer__container" id="contact-us">
+      <section class="social__media">
+        <div class="social__media--wrap">
+          <div class="footer__logo">
+            <a href="/" id="footer__logo">ITLP</a>
+          </div>
+          <p class="website__rights">© ITLP 2020. </p>
+          <div class="social__icons">
+            <a href="https://www.facebook.com/ITLPCenter" class="social__icon--link" target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-instagram"></i
+            ></a>-->
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-whatsapp"></i
+            ></a>-->
+            <a href="mailto:itlpcenter@gmail.com" class="social__icon--link"
+              ><i class="fab fa-google"></i
+            ></a>
+            <a href="tel:+" class="social__icon--link">
+              <i class="fas fa-phone-alt"></i>
+           </a>
+          </div>
+        </div>
+      </section>
+      
+    </div>
